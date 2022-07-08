@@ -1,0 +1,102 @@
+* {
+	margin:  0;
+	padding:  0;
+}
+
+body {
+	background-color: rgba(36, 135, 241, .51);
+	padding-bottom:  15px;
+	padding-top: 30px;
+}
+
+.blockTitle {
+	text-align: center;
+}
+
+.blockTitle > .title {
+	font-size: 40px;
+}
+
+.blockTitle > .titleNotes {
+	margin-top:  20px;
+	font-size: 35px;
+}
+
+.blockWithNotes {
+	min-width: 270px;
+	width: 50%;
+	margin: 30px auto 20px;
+	padding:  20px;
+	position: relative;
+}
+
+.empty-field {
+	padding: 8px 0;
+}
+
+.notes-line {
+	padding: 8px 0;
+}
+
+.short-line {
+	width: 40px;
+	margin: 0 auto;
+}
+
+
+.line {
+	border-bottom:  1px solid black;
+}
+
+
+.notes {
+	width: 20px;
+	height:  12px;
+	background-color: red;
+	border-radius: 10px;
+	left: calc(50% - 10px);
+	position: absolute;
+    top: 2px;
+    display: none;
+}
+
+.line-flex {
+	position: relative;
+}
+
+
+.block-notes {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.block-notes > .bnt {
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.blockButtons {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 320px;
+    margin:  0 auto;
+}
+
+.blockButtons > button {
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.blockButtons > .answerOptions {
+	margin-bottom:  15px;
+	text-align: center;
+	display: none;
+}
+
+.blockButtons > .answerOptions > button {
+	padding:  10px;
+}
