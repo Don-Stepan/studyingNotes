@@ -7,6 +7,7 @@ body {
 	background-color: rgba(36, 135, 241, .51);
 	padding-bottom:  15px;
 	padding-top: 30px;
+	position: relative;
 }
 
 .blockTitle {
@@ -28,6 +29,12 @@ body {
 	margin: 30px auto 20px;
 	padding:  20px;
 	position: relative;
+}
+
+.blockWithNotes img {
+	width: 96px;
+	position: absolute;
+	top: 63px;
 }
 
 .empty-field {
@@ -99,4 +106,34 @@ body {
 
 .blockButtons > .answerOptions > button {
 	padding:  10px;
+}
+
+ /* block messages */
+.blockMessages {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.blockMessages > .answer {
+	font-size: 50px;
+	color: white;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: none;
+}
+
+.blockMessages > .answer > span {
+	position: relative;
+	top: 60px;
+}
+
+.blockMessages > .yes {
+	background-color: green;
+}
+
+.blockMessages > .nono {
+	background-color: brown;
 }
