@@ -6,6 +6,8 @@ function startGame() {
 	let answerOptionsBlock = $('.answerOptions');
 	let answerOptionsItem = $('.answerOptions > .but');
 	let notes = $('.notes');
+	let messageYes = $('.blockMessages > .yes');
+	let messageNo = $('.blockMessages > .nono');
 
 
     stopButton.on('click', function() {
@@ -35,21 +37,20 @@ function startGame() {
 		$('#'+activeNotes).show();
 	}
 
-
 	$('.answerOptions >.but').on('click', function() {
 
 	  if($(this).attr("id") ===  activeNotes) {
-	  	console.log('esss')
 	  	notes.hide();
+		messageYes.show();
 	  	setTimeout(function() {
 	  		document.location.reload();
 	  	}, 1000);
 	 
 	  } else {
-	  	console.log('Noooooooo')
+		messageNo.show();
+		setTimeout(function() {
+			messageNo.hide();
+		}, 2000);
 	  }
 	})
-
-	
-
 }
