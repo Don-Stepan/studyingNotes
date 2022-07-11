@@ -26,7 +26,7 @@ function startGame() {
 	   return Math.floor(Math.random() * (max - min)) + min;
 	}
 
-	let activeNotes = not[0][getRandomInt(0, 7)].id;
+	let activeNotes = not[0][getRandomInt(0, 13)].id;
 	console.log(activeNotes)
 
 
@@ -37,20 +37,41 @@ function startGame() {
 		$('#'+activeNotes).show();
 	}
 
-	$('.answerOptions >.but').on('click', function() {
+	let arr =[
+		[1,8],
+		[7],
+		[6,13],
+		[5, 12],
+		[4,11],
+		[3, 10],
+		[2,9]
+	];
 
-	  if($(this).attr("id") ===  activeNotes) {
-	  	notes.hide();
-		messageYes.show();
-	  	setTimeout(function() {
-	  		document.location.reload();
-	  	}, 1000);
-	 
-	  } else {
-		messageNo.show();
-		setTimeout(function() {
-			messageNo.hide();
-		}, 2000);
-	  }
+	$('.answerOptions >.but').on('click', function() {
+		let background = $('.greyBackground');
+		let body = $('body');
+		let buttonID = $(this).attr("id");
+		buttonID --;
+
+		if (arr[buttonID] != 'undefined' && Array.isArray(arr[buttonID])) {
+			if (arr[buttonID].includes(Number(activeNotes))) {
+				notes.hide();
+				body.addClass('noScroll');
+				background.show();
+				messageYes.show();
+				setTimeout(function() {
+					document.location.reload();
+				}, 1500);
+			} else {
+				background.show();
+				messageNo.show();
+				body.addClass('noScroll')
+				setTimeout(function() {
+					messageNo.hide();
+					background.hide();
+					body.removeClass('noScroll');
+				}, 1500);
+			}
+		}
 	})
 }
