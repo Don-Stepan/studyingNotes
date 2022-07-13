@@ -110,50 +110,36 @@ body {
 
 .blockButtons > .answerOptions > button {
 	padding:  10px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
 }
 
- /* block messages */
-.blockMessages {
+ /* block counter */
+
+.counterBlock {
 	position: absolute;
+	display: flex;
+	justify-content: center;
 	width: 100%;
-	text-align: center;
-	z-index: 2;
 }
 
-.blockMessages > .answer {
-	font-size: 50px;
-	color: white;
-	width: 150px;
-	height: 150px;
-	margin: 0 auto;
+.counterBlock > div {
 	display: none;
-	box-shadow: 0 0 20px 15px white
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+	margin: 0 70px;
 }
 
-.blockMessages > .answer > span {
-	position: relative;
-	top: 45px;
-}
-
-.blockMessages > .yes {
+.counterBlock > .counterYes {
 	background-color: green;
+	margin-left: 0;
 }
 
-.blockMessages > .nono {
+.counterBlock > .counterNo {
 	background-color: brown;
-}
-
-.greyBackground {
-	position: absolute;
-	z-index: 1;
-	height: 100rem;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
-    background-color: rgba(128, 128, 128, .7);
-	display: none;
-}
-
-.noScroll {
-	overflow: hidden;
+	margin-right: 0;
 }
