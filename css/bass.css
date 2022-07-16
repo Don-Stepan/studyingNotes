@@ -9,8 +9,32 @@ body {
 	position: relative;
 }
 
+.versionGame {
+	font-size: 18px;
+    left: 5px;
+    position: absolute;
+}
+
+.buttonBack {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.buttonBack > a {
+	color: black;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+	cursor: pointer;
+}
+
+.buttonBack > a:hover {
+	background-color: white;
+}
+
 .blockTitle {
 	text-align: center;
+	margin-top: 20px;
 }
 
 .blockTitle > .title {
@@ -18,7 +42,7 @@ body {
 }
 
 .blockTitle > .titleNotes {
-	margin-top:  20px;
+	margin-bottom: 20px;
 	font-size: 35px;
 }
 
@@ -49,11 +73,9 @@ body {
 	margin: 0 auto;
 }
 
-
 .line {
 	border-bottom:  1px solid black;
 }
-
 
 .notes {
 	width: 20px;
@@ -69,7 +91,6 @@ body {
 .line-flex {
 	position: relative;
 }
-
 
 .block-notes {
     position: absolute;
@@ -95,6 +116,10 @@ body {
     margin: 5px;
     cursor: pointer;
     padding: 10px;
+	min-height: 44px;
+	color: black;
+	font-weight: 700;
+	font-size: 18px;
 }
 
 .blockButtons > .startGame {
@@ -110,9 +135,10 @@ body {
 
 .blockButtons > .answerOptions > button {
 	padding:  10px;
-	height: 40px;
+	min-height: 44px;
 	width: 40px;
 	cursor: pointer;
+	font-size: 18px;
 }
 
  /* block counter */

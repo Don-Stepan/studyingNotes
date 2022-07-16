@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/violinist.css">
+</head>
+<body>
+	<div class='blockTitle'>
+		<p class='title'> VIOLINIST Clef </p>
+		<p class='titleNotes'> What note is that? </p>
+	</div>
+
+	<div class="counterBlock">
+		<div class="counterYes">
+			<p>Yes</p>
+			<span class="textYes">0</span>
+		</div>
+		<div class="counterNo">
+			<p>No</p>
+			<span class="textNo">0</span>
+		</div>
+	</div>
+
+	<div class='blockWithNotes'>
+		<img src="../image/violin.png" alt="">
+
+		<div class='line-flex notes-line short-line top'> <div class="line"></div> <div class='notes' id="1"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="2"></div> </div>
+
+		<div class='line-flex notes-line'> <div class="line"></div>  <div class='notes' id="3"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="4"></div> </div>
+
+		<div class='line-flex notes-line'> <div class="line"></div> <div class='notes' id="5"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="6"></div> </div>
+
+		<div class='line-flex notes-line'> <div class="line"></div> <div class='notes' id="7"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="8"></div> </div>
+
+		<div class='line-flex notes-line'> <div class="line"></div> <div class='notes' id="9"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="10"></div> </div>	
+
+		<div class='line-flex notes-line'> <div class="line"></div> <div class='notes' id="11"></div> </div>
+
+		<div class='line-flex empty-field'> <div class='notes' id="12"></div> </div>
+
+		<div class='line-flex notes-line short-line bottom'> <div class="line"></div> <div class='notes' id="13"></div> </div>
+
+	</div>
+
+	<div class='blockButtons'>
+		<div class='answerOptions'>
+			<button class='but options-c' id='1'>C</button>
+			<button class='but options-d' id='2'>D</button>
+			<button class='but options-e' id='3'>E</button>
+			<button class='but options-f' id='4'>F</button>
+			<button class='but options-g' id='5'>G</button>
+			<button class='but options-a' id='6'>A</button>
+			<button class='but options-h' id='7'>H</button>
+		</div>
+
+		<button class='startGame' onclick="startGame()"> Start Game </button>
+		<button class='stopGame'> Stop </button>
+        <div class="buttonBack">
+            <a href="../index.html">Back</a>
+        </div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/violinist.js"></script>
+</body>
+</html>

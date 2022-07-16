@@ -1,14 +1,15 @@
 
-
 function startGame() {
 	let startButton = $('.startGame');
 	let stopButton = $('.stopGame');
 	let answerOptionsBlock = $('.answerOptions');
 	let notes = $('.notes');
 	let counter = $('.counterBlock > div');
+	let buttonBack = $('.buttonBack');
 
     stopButton.on('click', function() {
 		window.location.reload();
+		buttonBack.show();
     });
 
 	let not = [];
@@ -22,10 +23,12 @@ function startGame() {
 
 	let activeNotes = not[0][getRandomInt(0, 13)].id;
 	console.log(activeNotes)
-
+	
+	buttonBack.hide();
 	counter.show();
 	answerOptionsBlock.show();
 	startButton.hide();
+
 
 	if(notes.is('#' + activeNotes)) {
 		$('#'+activeNotes).show();

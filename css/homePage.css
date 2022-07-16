@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: rgba(36, 135, 241, .51);
+	padding-bottom:  15px;
+	position: relative;
+}
+
+.blockImage {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    max-width: 530px;
+    opacity: .2;
+    top: 60px;
+    z-index: 1;
+}
+
+.blockTitle {
+	text-align: center;
+    margin: 40px 0 100px;
+}
+
+.blockTitle > .titleSelect {
+	font-size: 50px;
+    text-transform: capitalize;
+}
+
+.homePageButtonClef {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.homePageButtonClef p {
+    font-size: 25px;
+    color: black;
+}
+
+.homePageButtonClef p:nth-child(2n) {
+    margin: 10px 0;
+}
+
+.homePageButtonClef a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.homePageButtonClef a:hover {
+    background-color: white;
+}
