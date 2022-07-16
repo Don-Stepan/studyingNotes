@@ -1,0 +1,166 @@
+* {
+	margin:  0;
+	padding:  0;
+}
+
+body {
+	background-color: rgba(36, 135, 241, .51);
+	padding-bottom:  15px;
+	position: relative;
+}
+
+.buttonBack {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.buttonBack > a {
+	color: black;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+	cursor: pointer;
+}
+
+.buttonBack > a:hover {
+	background-color: white;
+}
+
+.blockTitle {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.blockTitle > .title {
+	font-size: 40px;
+}
+
+.blockTitle > .titleNotes {
+	margin-bottom: 20px;
+	font-size: 35px;
+}
+
+.blockWithNotes {
+	min-width: 270px;
+	width: 50%;
+	margin: 30px auto 20px;
+	padding:  20px;
+	position: relative;
+}
+
+.blockWithNotes img {
+    left: -20px;
+    width: 160px;
+    position: absolute;
+    top: 24px;
+}
+
+.empty-field {
+	padding: 8px 0;
+}
+
+.notes-line {
+	padding: 8px 0;
+}
+
+.short-line {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.line {
+	border-bottom:  1px solid black;
+}
+
+.notes {
+	width: 20px;
+	height:  12px;
+	background-color: red;
+	border-radius: 10px;
+	left: calc(50% - 10px);
+	position: absolute;
+    top: 2px;
+    display: none;
+}
+
+.line-flex {
+	position: relative;
+}
+
+.block-notes {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.block-notes > .bnt {
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.blockButtons {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 320px;
+    margin:  0 auto;
+}
+
+.blockButtons > button {
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+	min-height: 44px;
+	color: black;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.blockButtons > .startGame {
+	margin-bottom: 15px;
+}
+
+.blockButtons > .answerOptions {
+	margin-bottom:  15px;
+	margin-top: 5px;
+	text-align: center;
+	display: none;
+}
+
+.blockButtons > .answerOptions > button {
+	padding:  10px;
+	min-height: 44px;
+	width: 40px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+ /* block counter */
+
+ .counterBlock {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.counterBlock > div {
+	display: none;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+	margin: 0 70px;
+}
+
+.counterBlock > .counterYes {
+	background-color: green;
+	margin-left: 0;
+}
+
+.counterBlock > .counterNo {
+	background-color: brown;
+	margin-right: 0;
+}
