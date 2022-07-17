@@ -57,15 +57,15 @@ body {
 .blockWithNotes img {
 	width: 96px;
 	position: absolute;
-	top: 63px;
+	top: 44px;
 }
 
 .empty-field {
-	padding: 8px 0;
+	padding: 6px 0;
 }
 
 .notes-line {
-	padding: 8px 0;
+	padding: 6px 0;
 }
 
 .short-line {
@@ -84,7 +84,7 @@ body {
 	border-radius: 10px;
 	left: calc(50% - 10px);
 	position: absolute;
-    top: 2px;
+    top: 0;
     display: none;
 }
 
@@ -136,9 +136,9 @@ body {
 .blockButtons > .answerOptions > button {
 	padding:  10px;
 	min-height: 44px;
-	width: 40px;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 24px;
+	color: black;
 }
 
  /* block counter */
