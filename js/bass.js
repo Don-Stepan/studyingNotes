@@ -24,6 +24,7 @@ function startGame() {
 	let activeNotes = not[0][getRandomInt(0, 13)].id;
 	console.log(activeNotes)
 	
+	stopButton.show();
 	buttonBack.hide();
 	counter.show();
 	answerOptionsBlock.show();

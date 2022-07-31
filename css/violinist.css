@@ -121,6 +121,10 @@ body {
 	margin-bottom: 15px;
 }
 
+.blockButtons > .stopGame {
+	display: none;
+}
+
 .blockButtons > .answerOptions {
 	margin-bottom:  15px;
 	margin-top: 5px;
