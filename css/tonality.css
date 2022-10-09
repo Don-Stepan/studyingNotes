@@ -1,0 +1,56 @@
+* {
+	margin:  0;
+	padding:  0;
+}
+
+body {
+	background-color: rgba(36, 135, 241, .51);
+	padding-bottom:  15px;
+	position: relative;
+}
+
+.blockTitle {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 30px;
+}
+
+.tonalityImg {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tonalityImg img {
+    width: 100%;
+}
+
+.notesTonality {
+    padding: 20px;
+    text-align: center;
+}
+
+.notesTitle {
+    font-size: 25px;
+}
+
+.notes p:first-of-type {
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.notes {
+    margin: 0 auto 3px;
+    background: burlywood;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.notes span {
+    color: red;
+}
+
+.draggable {
+    width: 380px;
+    margin: 0 auto !important;
+} 
