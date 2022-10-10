@@ -81,5 +81,19 @@ function startGame() {
 				counterBlockNo.html(counterNoPlus);
 			}
 		}
+
+		if (counterYesPlus == 50 && counterNoPlus == 0) {
+			alert('Ви набрали '+ counterYesPlus +' правильних відповідей. Це замало, треба більше..')
+		} else if (counterYesPlus == 100 && counterNoPlus == 0) {
+			alert('Ви набрали '+ counterYesPlus +' правильних відповідей. Непогано але треба більше..')
+		} else if (counterYesPlus == 200 && counterNoPlus == 0) {
+			alert('Ви набрали '+ counterYesPlus +' правильних відповідей. Ого-Го-ГоГО.. Це чемпіонство.. Вітаю. Ідіть пити чай :)')
+		} else if (counterNoPlus == 1) {
+			alert('Еххх треба бути уважним')
+		} else if (counterNoPlus == 10) {
+			alert('Краще почни спочатку')
+		} else if (counterYesPlus == 20 && counterNoPlus == 0) {
+			alert('Непоганий старт.. Так тримати')
+		}
 	})
 }

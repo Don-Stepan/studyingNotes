@@ -9,10 +9,37 @@ body {
 	position: relative;
 }
 
+.buttonBack {
+    position: absolute;
+    left: 40px;
+}
+
+.buttonBack a {
+    color: white;
+    background-color: black;
+    padding: 4px 6px 7px;
+    border-radius: 14px;
+}
+
 .blockTitle {
     text-align: center;
     margin: 30px auto;
     font-size: 30px;
+}
+
+.tonalityBlock {
+    position: relative;
+}
+
+.tonalityInfo p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.tonalityInfo {
+    padding: 0 20px;
 }
 
 .tonalityImg {
@@ -26,7 +53,7 @@ body {
 }
 
 .notesTonality {
-    padding: 20px;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -54,3 +81,20 @@ body {
     width: 380px;
     margin: 0 auto !important;
 } 
+
+.slick-arrow {
+    position: absolute;
+    top: -30px;
+}
+
+.slick-prev {
+    left: 30px;
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-disabled {
+    opacity: .3;
+}
